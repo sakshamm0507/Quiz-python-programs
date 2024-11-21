@@ -36,14 +36,13 @@ def login():
     return None
 
 # Function to get the quiz questions
-def get_questions():
-    questions = [
-        {"question": "What does AI stand for?", "options": ["Artificial Intelligence", "Automated Interaction", "Automatic Internet", "Analog Integration"], "answer": 1},
-        {"question": "Which of the following is a common application of AI?", "options": ["Image recognition", "Texting", "Manual labor", "Watching TV"], "answer": 1},
-        {"question": "Who is known as the father of AI?", "options": ["Alan Turing", "Elon Musk", "John McCarthy", "Bill Gates"], "answer": 3},
-        {"question": "Which of these is a type of AI?", "options": ["Supervised Learning", "Carpet Learning", "Human Learning", "Text Learning"], "answer": 1},
-        {"question": "What is the goal of reinforcement learning?", "options": ["Maximizing the reward", "Minimizing the effort", "Maximizing the risk", "None of the above"], "answer": 1}
-    ]
+def load_questions(section):
+    questions = []
+    with open("questions.txt", "r") as file:
+        for line in file:
+            parts = line.strip().split("|")
+            if parts[0].lower() == section.lower():
+                questions.append(parts[1:])
     return questions
 
 # Function to save the result after the quiz
