@@ -1,0 +1,5 @@
+AI|What is the full form of AI?|1. Artificial Intelligence|2. Automated Interaction|3. Automatic Internet|4. Analog Integration|1
+AI|Which type of learning uses labeled data?|1. Unsupervised Learning|2. Supervised Learning|3. Reinforcement Learning|4. Deep Learning|2
+AI|What does overfitting mean in Machine Learning?|1. Performs poorly on training data|2. Performs well on unseen data but poorly on training data|3. Performs well on training data but poorly on unseen data|4. Performs equally well on all datasets|3
+AI|Which framework is popular for deep learning?|1. NumPy|2. TensorFlow|3. Pandas|4. Matplotlib|2
+AI|In Reinforcement Learning, what does the agent aim to maximize?|1. The loss|2. The reward|3. The effort|4. The penalties|2
